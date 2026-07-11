@@ -114,25 +114,25 @@ def exemplo_while():
         i = 0
         while i < 3:
             Time1: str = input("Time 1")
-            time1_gols: int = int(input("Gols " + time1 + ": "))
+            time1_gols: int = int(input("Gols " + Time1 + ": "))
 
             Time2: str = input("Time 2")
-            time2_gols: int = int(input("Gols " + time2 + ": "))
+            time2_gols: int = int(input("Gols " + Time2 + ": "))
 
             placar = str(time1_gols) + "x" + str(time2_gols)
 
             # interpolação de string (forma simplificada da linha)
-            texto_arquivo += f"{time1};{time2};{placar}"
+            texto_arquivo += f"{Time1};{Time2};{placar}"
             print("\n\n\n--------------------------------------------")
 
             if time1_gols > time2_gols:
-                print(f"Resultado: time {time} ganhou")
+                print(f"Resultado: time {Time1} ganhou")
             elif time2_gols > time1_gols:
-                print(f"Resultado: Time {time2} ganhou")
+                print(f"Resultado: Time {Time2} ganhou")
             else:
                 print("Resultado: Empate")
 
-            time.sleep(2)
+            Time1.sleep(2)
 
             limpar_terminal = input("Deseja limpar terminal [y/n]")
             if limpar_terminal == "y":
