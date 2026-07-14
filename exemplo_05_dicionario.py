@@ -1,7 +1,7 @@
 from typing import Dict, List
 
 def exemplo_basico_dicionario():
-    carros = ()
+    carros = {}
 
     carros["bmw"] = "M5"
     carros["mercedes"] = "GLA 250"
@@ -15,7 +15,7 @@ def exemplo_basico_dicionario():
 
     # Obter os valores que tenho no meu dicionário
     print(carros.values())
-
+exemplo_basico_dicionario()
 # função que tem um parâmetro do tipo dicionário
 def obter_clientes_com_score_alto(clientes: Dict[str, Dict[str, float]]):
     # Descobrir quais clientes tem score alto(acima de 650)
@@ -70,7 +70,7 @@ def processar_disponibilidade_emprestimo():
     total_salarios = somar_salarios(clientes)
     nome_clientes = obter_nome_clientes(clientes)
 
-    print("Clientes aprovados paraempréstimo:", clientes_aprovados_para_emprestimo)
+    print("Clientes aprovados para empréstimo:", clientes_aprovados_para_emprestimo)
     print("Total dos salários:", total_salarios)
     print("Clientes: ", nome_clientes)
 
