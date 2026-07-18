@@ -332,13 +332,4 @@ def exemplo_loja_com_menu():
 exemplo_loja_com_menu()
 
 
-class Tenis:
-    def __init__(self, modelo: str, tamanho: int):
-        self.modelo = modelo
-        self.modelo = tamanho
-    
-    def apresentar_dados():
-        print(f"""Tenis: {self.modelo}
-    Tipo: {self.tamanho}
-    """)
 
